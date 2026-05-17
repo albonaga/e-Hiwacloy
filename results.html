@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="header-container">
+
+        <div class="logo">
+            <img src="files/logo.png">
+            <div>
+                <h2>e-Hiwacloy</h2>
+                <p>Barangay Health Appointment System</p>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="gathering.html">Data Gathering</a>
+            <a href="results.html" class="active">Results</a>
+
+             <div class="dropdown active-dropdown">
+
+    More ▾
+
+    <div class="dropdown-menu">
+
+        <a href="reflection.html">
+            Reflection
+        </a>
+
+        <a href="findings.html">
+            Additional Findings
+        </a>
+
+        <a href="walkthrough.html">
+            Prototype Walkthrough
+        </a>
+
+        <a href="video-demo.html">
+            Video Demonstration
+        </a>
+
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero small-hero">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Results & Recommendations</h1>
+            <p>
+                Usability metrics and system evaluation
+                based on SUS and task performance.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ================= RESULTS PAGE ================= -->
+<section class="results-page">
+
+    <div class="results-container">
+
+
+    <section class="main-card">
+
+    <div class="section-title">
+
+        <span>1</span>
+
+        <h2>Summary of Usability Testing Results</h2>
+
+    </div>
+
+    <div class="results-main">
+
+        <!-- SUS GAUGE -->
+        <div class="card">
+
+            <h3>System Usability Scale (SUS) Score</h3>
+
+            <div class="circle-wrap">
+
+                <div class="circle">
+
+                    <div>
+
+                        <span>82.5</span>
+                        <small>/100</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="grade">
+                Grade B — Excellent Usability
+            </p>
+
+            <p class="desc">
+                The e-Hiwacloy system obtained a highly
+                acceptable usability rating based on the
+                System Usability Scale (SUS) evaluation
+                conducted among the respondents.
+            </p>
+
+        </div>
+
+        <!-- SUS CHART -->
+        <div class="card">
+
+            <h3>SUS Response Distribution</h3>
+
+            <canvas id="susChart"></canvas>
+
+            <p class="chart-desc">
+                The chart presents the distribution of
+                respondent SUS scores gathered during
+                usability testing.
+            </p>
+
+            </div>
+
+        </div>
+
+        <!-- STATS -->
+        <div class="results-bottom">
+
+            <div class="card stats-card">
+
+                <h3>Summary Statistics</h3>
+
+                <div class="stats-grid">
+
+                    <div class="mini-stat">
+                        <i class="fa fa-chart-line"></i>
+                        <h2>82.5</h2>
+                        <p>Average SUS Score</p>
+                    </div>
+
+                    <div class="mini-stat">
+                        <i class="fa fa-arrow-trend-up"></i>
+                        <h2>97.5</h2>
+                        <p>Highest SUS Score</p>
+                    </div>
+
+                    <div class="mini-stat">
+                        <i class="fa fa-arrow-trend-down"></i>
+                        <h2>52.5</h2>
+                        <p>Lowest SUS Score</p>
+                    </div>
+
+                    <div class="mini-stat">
+                        <i class="fa fa-users"></i>
+                        <h2>40</h2>
+                        <p>Total Respondents</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- INTERPRETATION -->
+            <div class="card interpretation-card">
+
+    <h3>Overall Interpretation</h3>
+
+    <div class="insight-box">
+
+        <i class="fa fa-face-smile"></i>
+
+        <div>
+            <h4>Positive User Experience</h4>
+
+            <p>
+                Respondents found the system user-friendly
+                and easy to navigate.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="insight-box">
+
+        <i class="fa fa-chart-line"></i>
+
+        <div>
+            <h4>High SUS Performance</h4>
+
+            <p>
+                The obtained SUS score of 82.5 indicates
+                excellent usability performance.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="insight-box">
+
+        <i class="fa fa-circle-check"></i>
+
+        <div>
+            <h4>Successful Task Completion</h4>
+
+            <p>
+                Most respondents completed tasks successfully
+                with minimal assistance.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+        </div>
+
+
+
+        <div class="task-grid">
+
+            <div class="card">
+
+                <h3>Completion Time Analysis</h3>
+
+                <canvas id="taskChart"></canvas>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Performance Metrics</h3>
+
+                <div class="task-stats">
+
+                    <div class="task-stat">
+                        <h2>92%</h2>
+                        <p>Task Success Rate</p>
+                    </div>
+
+                    <div class="task-stat">
+                        <h2>1m 24s</h2>
+                        <p>Average Completion Time</p>
+                    </div>
+
+                    <div class="task-stat">
+                        <h2>Book Appointment</h2>
+                        <p>Most Time Consuming Task</p>
+                    </div>
+
+                    <div class="task-stat">
+                        <h2>Log Out</h2>
+                        <p>Fastest Completed Task</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>        
+
+
+
+    <div class="card question-card">
+
+        <div class="question-header">
+
+            <h3>SUS Question Responses</h3>
+
+            <p>
+                Distribution of respondent answers for each
+                System Usability Scale (SUS) questionnaire item.
+            </p>
+
+        </div>
+
+        <!-- IMPORTANT -->
+        <div class="chart-wrapper">
+
+            <canvas id="questionChart"></canvas>
+
+        </div>
+
+    </div>
+
+
+    </section>
+    
+    
+
+<!-- ================================================= -->
+<!-- 2. KEY ISSUES IDENTIFIED -->
+<!-- ================================================= -->
+
+<section class="main-card">
+
+    <div class="section-title">
+
+        <span>2</span>
+
+        <h2>Key Issues Identified</h2>
+
+    </div>
+
+    <div class="rec-grid">
+
+        <!-- ISSUE 1 -->
+
+        <div class="rec">
+
+            <div class="num">1</div>
+
+            <i class="fa fa-calendar-xmark"></i>
+
+            <h4>Appointment Rescheduling Confusion</h4>
+
+            <p>
+                Some respondents had difficulty
+                locating the reschedule and cancel
+                appointment functions.
+            </p>
+
+        </div>
+
+
+        <!-- ISSUE 2 -->
+
+        <div class="rec">
+
+            <div class="num">2</div>
+
+            <i class="fa fa-mobile-screen"></i>
+
+            <h4>Mobile Responsiveness Issues</h4>
+
+            <p>
+                Minor layout inconsistencies were
+                observed on smaller mobile devices.
+            </p>
+
+        </div>
+
+
+        <!-- ISSUE 3 -->
+
+        <div class="rec">
+
+            <div class="num">3</div>
+
+            <i class="fa fa-circle-info"></i>
+
+            <h4>Need for Better Instructions</h4>
+
+            <p>
+                Some respondents required guidance
+                when using the system for the first
+                time.
+            </p>
+
+        </div>
+
+        <!-- ISSUE 4 -->
+
+        <div class="rec">
+
+            <div class="num">4</div>
+
+            <i class="fa fa-gauge-high"></i>
+
+            <h4>Occasional Slow Loading</h4>
+
+            <p>
+                A few users experienced delays
+                while accessing specific system
+                features and pages.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- 3. DISCUSSION OF FINDINGS -->
+<!-- ================================================= -->
+
+<section class="main-card">
+
+    <div class="section-title">
+
+        <span>3</span>
+
+        <h2>Discussion of Findings</h2>
+
+    </div>
+
+    <div class="feedback-grid">
+
+        <!-- POSITIVE FEEDBACK -->
+
+        <div class="card">
+
+            <h3>Positive Feedback from Users</h3>
+
+            <div class="feedback-tags">
+
+                <div class="tag-box">
+                    <span>Easy to Use</span>
+                    <div class="tag-info">
+                        Users found the system simple and understandable.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>User-Friendly</span>
+                    <div class="tag-info">
+                        The interface was comfortable and easy to interact with.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>Convenient</span>
+                    <div class="tag-info">
+                        Users appreciated faster and easier appointment booking.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>Accessible</span>
+                    <div class="tag-info">
+                        The system can be easily accessed by users anytime.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>Fast Appointment</span>
+                    <div class="tag-info">
+                        Booking appointments became quicker and more efficient.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>Simple Interface</span>
+                    <div class="tag-info">
+                        The layout and design were clean and organized.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>Time Saving</span>
+                    <div class="tag-info">
+                        Users spent less time processing appointments.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>Easy Navigation</span>
+                    <div class="tag-info">
+                        Users could easily move through different pages.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- NEGATIVE FEEDBACK -->
+
+        <div class="card">
+
+            <h3>Negative Feedback from Users</h3>
+
+            <div class="feedback-tags">
+
+                <div class="tag-box">
+                    <span>Limited Features</span>
+                    <div class="tag-info">
+                        Users suggested adding more advanced functions.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>Notification Delays</span>
+                    <div class="tag-info">
+                        Some reminders and alerts appeared late.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>Small Text Size</span>
+                    <div class="tag-info">
+                        Some users found the text difficult to read.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>Confusing Icons</span>
+                    <div class="tag-info">
+                        Certain icons were unclear to first-time users.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>Slow Loading</span>
+                    <div class="tag-info">
+                        Some pages required more loading time.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>Mobile Layout Issues</span>
+                    <div class="tag-info">
+                        Minor layout problems appeared on smaller screens.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>Limited Accessibility</span>
+                    <div class="tag-info">
+                        Some features were difficult for certain users to access.
+                    </div>
+                </div>
+
+                <div class="tag-box">
+                    <span>Need Better Instructions</span>
+                    <div class="tag-info">
+                        Users requested clearer guides and instructions.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+    <!-- ================================================= -->
+    <!-- 4. RECOMMENDATIONS -->
+    <!-- ================================================= -->
+
+    <section class="main-card">
+
+        <div class="section-title">
+
+            <span>4</span>
+
+            <h2>Recommendations for Improving the Prototype</h2>
+
+        </div>
+
+        <div class="rec-grid">
+
+            <div class="rec">
+
+                <div class="num">1</div>
+
+                <i class="fa fa-calendar-check"></i>
+
+                <h4>Improve Appointment Actions</h4>
+
+                <p>
+                    Make reschedule and cancel options
+                    more visible and accessible.
+                </p>
+
+            </div>
+
+            <div class="rec">
+
+                <div class="num">2</div>
+
+                <i class="fa fa-font"></i>
+
+                <h4>Improve Icons & Labels</h4>
+
+                <p>
+                    Use clearer interface labels and
+                    more understandable icons.
+                </p>
+
+            </div>
+
+            <div class="rec">
+
+                <div class="num">3</div>
+
+                <i class="fa fa-bell"></i>
+
+                <h4>Enhance Notifications</h4>
+
+                <p>
+                    Improve visibility of reminders
+                    and confirmation messages.
+                </p>
+
+            </div>
+
+            <div class="rec">
+
+                <div class="num">4</div>
+
+                <i class="fa fa-mobile-screen"></i>
+
+                <h4>Mobile Optimization</h4>
+
+                <p>
+                    Improve responsiveness across
+                    all mobile devices.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ================================================= -->
+<!-- 5. SUGGESTED DESIGN IMPROVEMENTS -->
+<!-- ================================================= -->
+
+<section class="main-card">
+
+    <div class="section-title">
+
+        <span>5</span>
+
+        <h2>Suggested Design Improvements</h2>
+
+    </div>
+
+    <div class="rec-grid">
+
+        <!-- 1 -->
+
+        <div class="rec">
+
+            <div class="num">1</div>
+
+            <i class="fa fa-bell"></i>
+
+            <h4>Improve Notifications</h4>
+
+            <p>
+                Add clearer and more visible
+                appointment reminders and alerts
+                for users.
+            </p>
+
+        </div>
+
+        <!-- 2 -->
+
+        <div class="rec">
+
+            <div class="num">2</div>
+
+            <i class="fa fa-wifi"></i>
+
+            <h4>Offline Access</h4>
+
+            <p>
+                Allow selected features to remain
+                accessible even without internet
+                connectivity.
+            </p>
+
+        </div>
+
+        <!-- 3 -->
+
+        <div class="rec">
+
+            <div class="num">3</div>
+
+            <i class="fa fa-calendar-days"></i>
+
+            <h4>Better Calendar Interface</h4>
+
+            <p>
+                Improve the calendar design for
+                easier appointment scheduling
+                and navigation.
+            </p>
+
+        </div>
+
+        <!-- 4 -->
+
+        <div class="rec">
+
+            <div class="num">4</div>
+
+            <i class="fa fa-user-doctor"></i>
+
+            <h4>Doctor Availability</h4>
+
+            <p>
+                Show healthcare staff schedules
+                to help users choose available
+                appointment slots.
+            </p>
+
+        </div>
+
+        <!-- 5 -->
+
+        <div class="rec">
+
+            <div class="num">5</div>
+
+            <i class="fa fa-eye"></i>
+
+            <h4>Improve Visibility</h4>
+
+            <p>
+                Increase readability of buttons,
+                labels, and important system
+                information.
+            </p>
+
+        </div>
+
+        <!-- 6 -->
+
+        <div class="rec">
+
+            <div class="num">6</div>
+
+            <i class="fa fa-sliders"></i>
+
+            <h4>Feature Enhancements</h4>
+
+            <p>
+                Add more useful functions that
+                improve user convenience and
+                system efficiency.
+            </p>
+
+        </div>
+
+        <!-- 7 -->
+
+        <div class="rec">
+
+            <div class="num">7</div>
+
+            <i class="fa fa-font"></i>
+
+            <h4>Clearer Labels</h4>
+
+            <p>
+                Use more understandable labels
+                and instructions throughout
+                the interface.
+            </p>
+
+        </div>
+
+        <!-- 8 -->
+
+        <div class="rec">
+
+            <div class="num">8</div>
+
+            <i class="fa fa-mobile-screen"></i>
+
+            <h4>Mobile Responsiveness</h4>
+
+            <p>
+                Optimize the system layout and
+                interface for different mobile
+                screen sizes.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= CHARTS ================= -->
+<script>
+
+/* SUS CHART */
+new Chart(document.getElementById("susChart"), {
+
+    type: "bar",
+
+    data: {
+
+        labels: [
+            "0-50",
+            "51-60",
+            "61-70",
+            "71-80",
+            "81-90",
+            "91-100"
+        ],
+
+        datasets: [{
+
+            data: [0,2,7,18,28,12],
+
+            backgroundColor: "#2ecc71",
+
+            borderRadius: 10
+
+        }]
+    },
+
+    options: {
+
+        plugins: {
+            legend: { display: false }
+        }
+
+    }
+
+});
+
+
+/* AGE */
+new Chart(document.getElementById("ageChart"), {
+
+    type: "bar",
+
+    data: {
+
+        labels: ["18","19","20","21","22"],
+
+        datasets: [{
+
+            data: [5,11,16,6,2],
+
+            backgroundColor: "#2ecc71",
+
+            borderRadius: 10
+
+        }]
+    }
+});
+
+
+/* GENDER */
+new Chart(document.getElementById("genderChart"), {
+
+    type: "pie",
+
+    data: {
+
+        labels: ["Male","Female"],
+
+        datasets: [{
+
+            data: [40,60],
+
+            backgroundColor: [
+                "#157347",
+                "#7DCEA0"
+            ]
+
+        }]
+    }
+});
+
+
+/* YEAR LEVEL */
+new Chart(document.getElementById("yearChart"), {
+
+    type: "doughnut",
+
+    data: {
+
+        labels: [
+            "1st Year",
+            "2nd Year",
+            "3rd Year"
+        ],
+
+        datasets: [{
+
+            data: [17.5,65,17.5],
+
+            backgroundColor: [
+                "#157347",
+                "#2ecc71",
+                "#A9DFBF"
+            ]
+
+        }]
+    }
+});
+
+
+/* TECH USE */
+new Chart(document.getElementById("techChart"), {
+
+    type: "pie",
+
+    data: {
+
+        labels: [
+            "Daily",
+            "Weekly",
+            "Monthly",
+            "Rarely"
+        ],
+
+        datasets: [{
+
+            data: [92.5,2.5,2.5,2.5],
+
+            backgroundColor: [
+                "#2ecc71",
+                "#157347",
+                "#A9DFBF",
+                "#D5F5E3"
+            ]
+
+        }]
+    }
+});
+
+
+/* TASK */
+new Chart(document.getElementById("taskChart"), {
+
+    type: "bar",
+
+    data: {
+
+        labels: [
+            "Register",
+            "Forgot Password",
+            "Log In",
+            "Book",
+            "View",
+            "Reschedule",
+            "Cancel",
+            "Hotline",
+            "Profile",
+            "Logout"
+        ],
+
+        datasets: [{
+
+            data: [45,60,25,95,40,70,50,30,20,15],
+
+            backgroundColor: "#2ecc71",
+
+            borderRadius: 10
+
+        }]
+    },
+
+    options: {
+
+        plugins: {
+            legend: { display: false }
+        }
+
+    }
+
+});
+
+
+/* SUS QUESTIONS */
+new Chart(document.getElementById("questionChart"), {
+
+    type: "bar",
+
+    data: {
+
+        labels: [
+            "Q1","Q2","Q3","Q4","Q5",
+            "Q6","Q7","Q8","Q9","Q10"
+        ],
+
+        datasets: [{
+
+            data: [15,20,12,10,22,18,8,25,16,14],
+
+            backgroundColor: "#157347",
+
+            borderRadius: 8
+
+        }]
+    },
+
+    options: {
+
+        plugins: {
+            legend: { display: false }
+        }
+
+    }
+
+});
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+        Established by e-Hiwacloy Team @ 2026
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+/* ================= SUS CHART ================= */
+
+new Chart(document.getElementById("susChart"), {
+
+    type: "bar",
+
+    data: {
+
+        labels: [
+            "0-50",
+            "51-60",
+            "61-70",
+            "71-80",
+            "81-90",
+            "91-100"
+        ],
+
+        datasets: [{
+
+            label: "Respondents",
+
+            data: [0, 2, 7, 18, 28, 12],
+
+            backgroundColor: "#2ecc71",
+
+            borderRadius: 10
+
+        }]
+    },
+
+    options: {
+
+        responsive: true,
+
+        aspectRatio: 2,
+
+        plugins: {
+
+            legend: {
+                display: false
+            },
+
+            tooltip: {
+
+                callbacks: {
+
+                    title: function(context) {
+
+                        return `SUS Score Range: ${context[0].label}`;
+                    },
+
+                    label: function(context) {
+
+                        return 'Respondents: ' + context.parsed.y;
+                    }
+                }
+            }
+
+        },
+
+        scales: {
+
+            x: {
+
+                ticks: {
+
+                    color: '#000'
+                },
+
+                title: {
+
+                    display: true,
+
+                    text: 'SUS Score Range',
+
+                    color: '#000',
+
+                    font: {
+
+                        size: 14,
+                        weight: 'normal'
+                    }
+                },
+
+                grid: {
+
+                    display: true
+                }
+
+            },
+
+            y: {
+
+                beginAtZero: true,
+
+                ticks: {
+
+                    color: '#000'
+                },
+
+                title: {
+
+                    display: true,
+
+                    text: 'Number of Respondents',
+
+                    color: '#000',
+
+                    font: {
+
+                        size: 14,
+                        weight: 'normal'
+                    }
+                },
+
+                grid: {
+
+                    display: true
+                }
+
+            }
+
+        }
+
+    }
+
+});
+
+
+/* ================= TASK PERFORMANCE CHART ================= */
+
+new Chart(document.getElementById("taskChart"), {
+
+    type: "bar",
+
+    data: {
+
+        labels: [
+            "Create Account",
+            "Forgot Password",
+            "Log In",
+            "Book Appointment",
+            "View Appointment",
+            "Reschedule",
+            "Cancel",
+            "Call Hotline",
+            "View Profile",
+            "Log Out"
+        ],
+
+        datasets: [{
+
+            label: "Completion Time (Seconds)",
+
+            data: [45, 60, 25, 95, 40, 70, 50, 30, 20, 15],
+
+            backgroundColor: "#2ecc71",
+
+            borderRadius: 10
+
+        }]
+    },
+
+    options: {
+
+        responsive: true,
+
+        aspectRatio: 2,
+
+        plugins: {
+
+            legend: {
+                display: false
+            },
+
+            tooltip: {
+
+                callbacks: {
+
+                    title: function(context) {
+
+                        return `Task: ${context[0].label}`;
+                    },
+
+                    label: function(context) {
+
+                        return 'Completion Time: ' + context.parsed.y + ' seconds';
+                    }
+                }
+            }
+
+        },
+
+        scales: {
+
+            x: {
+
+                ticks: {
+
+                    color: '#000',
+                    font: {
+                        weight: 'bold'
+                    }
+                },
+
+                title: {
+
+                    display: true,
+
+                    text: 'System Tasks',
+
+                    color: '#000',
+
+                    font: {
+
+                        size: 14,
+                        weight: 'bold'
+                    }
+                },
+
+                grid: {
+
+                    display: true
+                }
+
+            },
+
+            y: {
+
+                beginAtZero: true,
+
+                ticks: {
+
+                    color: '#000',
+                    font: {
+                        weight: 'bold'
+                    }
+                },
+
+                title: {
+
+                    display: true,
+
+                    text: 'Completion Time (Seconds)',
+
+                    color: '#000',
+
+                    font: {
+
+                        size: 14,
+                        weight: 'bold'
+                    }
+                },
+
+                grid: {
+
+                    display: true
+                }
+
+            }
+
+        }
+
+    }
+
+});
+
+
+/* ================= PDF MODAL ================= */
+
+function openModal(file,type){
+
+    document.getElementById("fileModal").style.display="flex";
+
+    document.getElementById("pdfViewer").src=file;
+}
+
+function closeModal(){
+
+    document.getElementById("fileModal").style.display="none";
+
+    document.getElementById("pdfViewer").src="";
+}
+
+window.onclick=function(e){
+
+    const modal=document.getElementById("fileModal");
+
+    if(e.target===modal){
+        closeModal();
+    }
+}
+
+
+
+
+function openModal(file,type){
+
+    document.getElementById("fileModal").style.display="flex";
+
+    document.getElementById("pdfViewer").src=file;
+}
+
+function closeModal(){
+
+    document.getElementById("fileModal").style.display="none";
+
+    document.getElementById("pdfViewer").src="";
+}
+
+window.onclick=function(e){
+
+    const modal=document.getElementById("fileModal");
+
+    if(e.target===modal){
+        closeModal();
+    }
+}
+
+
+
+/* ================= SUS QUESTION ANALYSIS ================= */
+
+const questionCanvas = document.getElementById('questionChart');
+
+new Chart(questionCanvas, {
+
+    type: 'bar',
+
+    data: {
+
+        labels: [
+
+            'Q1',
+            'Q2',
+            'Q3',
+            'Q4',
+            'Q5',
+            'Q6',
+            'Q7',
+            'Q8',
+            'Q9',
+            'Q10'
+
+        ],
+
+        datasets: [
+
+            {
+                label: '1',
+                data: [1,3,0,1,0,0,1,1,0,3],
+                backgroundColor: '#3366cc'
+            },
+
+            {
+                label: '2',
+                data: [0,12,5,9,1,17,1,7,2,5],
+                backgroundColor: '#dc3912'
+            },
+
+            {
+                label: '3',
+                data: [13,19,10,10,6,17,12,24,12,8],
+                backgroundColor: '#ff9900'
+            },
+
+            {
+                label: '4',
+                data: [16,2,14,10,22,4,16,7,17,12],
+                backgroundColor: '#109618'
+            },
+
+            {
+                label: '5',
+                data: [10,4,11,11,11,2,10,1,9,13],
+                backgroundColor: '#990099'
+            }
+
+        ]
+    },
+
+    options: {
+
+        responsive: true,
+
+        maintainAspectRatio: false,
+
+        layout: {
+
+            padding: {
+
+                top: 10,
+                bottom: 10
+            }
+        },
+
+        plugins: {
+
+            legend: {
+
+                position: 'top',
+
+                labels: {
+
+                    color: '#000',
+
+                    font: {
+
+                        size: 14,
+                        weight: 'bold'
+                    }
+                }
+            },
+
+            tooltip: {
+
+                callbacks: {
+
+                    title: function(context) {
+
+                        return 'SUS Item: ' + context[0].label;
+                    },
+
+                    label: function(context) {
+
+                        return (
+                            'Likert Scale ' +
+                            context.dataset.label +
+                            ' — ' +
+                            context.parsed.y +
+                            ' Respondents'
+                        );
+                    }
+                }
+            }
+        },
+
+        scales: {
+
+            x: {
+
+                stacked: false,
+
+                ticks: {
+
+                    color: '#000',
+
+                    font: {
+
+                        size: 13,
+                        weight: 'bold'
+                    }
+                },
+
+                title: {
+
+                    display: true,
+
+                    text: 'SUS Questionnaire Items',
+
+                    color: '#000',
+
+                    padding: 15,
+
+                    font: {
+
+                        size: 16,
+                        weight: 'bold'
+                    }
+                },
+
+                grid: {
+
+                    display: true
+                }
+            },
+
+            y: {
+
+                beginAtZero: true,
+
+                ticks: {
+
+                    color: '#000',
+
+                    font: {
+
+                        size: 13,
+                        weight: 'bold'
+                    }
+                },
+
+                title: {
+
+                    display: true,
+
+                    text: 'Number of Respondents',
+
+                    color: '#000',
+
+                    padding: 15,
+
+                    font: {
+
+                        size: 16,
+                        weight: 'bold'
+                    }
+                },
+
+                grid: {
+
+                    display: true
+                }
+            }
+        }
+    }
+});
+
+</script>
+
+</body>
+</html>
